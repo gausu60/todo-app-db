@@ -24,7 +24,8 @@
                         <%= item.name %>
                     </p>
     
-                </div> 
+                </div>
+                <input type="hidden" name="listName" value="<%= kindOfDay %>" /> 
 
             </form>
             
@@ -32,7 +33,7 @@
         <% }) %>
         <form class="item" method="post" action="/">
             <input type="text" name="newItem" placeholder="New Task" autofocus="off" />
-            <button type="submit" name="button">+</button>
+            <button type="submit" name="list" value="<%= kindOfDay %>">+</button>
 
         </form>
 
